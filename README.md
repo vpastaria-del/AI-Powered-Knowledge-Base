@@ -16,18 +16,18 @@ Semantic Indexing & Search: Transforms each text segment into vector representat
 
 ## Project Structure
 
-### 1. **Document Loading (`document_loader.py`)**
+### 1. **File Intake (`document_loader.py`)**
    - This script is responsible for loading a document into the system.
    - It supports different file types such as PDFs, Word documents, and plain text files.
    - The document is pre-processed (if necessary) to extract its raw content.
   
 
-### 2. **Document Chunking (`document_chunker.py`)**
+### 2. **Content Segmentation (`document_chunker.py`)**
    - After the document is loaded, this script splits the content into smaller, logical chunks for better analysis and indexing.
    - This chunking process is essential for large documents, as it allows the system to handle smaller pieces of text, improving both processing and retrieval times.
    - Each chunk represents a part of the document (e.g., a paragraph, section, or page).
 
-### 3. **Vector Embedding & Querying (`vector_embedding.py`)**
+### 3. **Semantic Indexing & Search (`vector_embedding.py`)**
    - This script performs the vectorization of the document chunks using AI-powered embeddings.
    - The vectorization process converts the text data into numerical vectors, which represent the semantic meaning of the document.
    - A vector database is created to store these embeddings, and a similarity search mechanism is applied to answer user queries based on the vectorized content.
@@ -43,7 +43,6 @@ Semantic Indexing & Search: Transforms each text segment into vector representat
    - The `document_chunker.py` script divides the document into smaller chunks, ensuring that each chunk is meaningful and manageable for AI processing.
    - This step helps to break large documents into sections that are easier to work with and increases the accuracy of the query results.
 
-### Step 3: **Vector Embedding**
    - Once the document is chunked, the `vector_embedding.py` script embeds each chunk into a vector format.
    - The embedding process involves converting the textual content into dense vector representations using pre-trained models like those available from Hugging Face.
    - These embeddings capture the semantic meaning of each chunk and allow for efficient comparison during query answering.
