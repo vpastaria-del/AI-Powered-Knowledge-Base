@@ -4,13 +4,15 @@ This system lets users submit a document and interact with it through natural-la
 
 ## Project Overview
 
-The AI-Powered Document Question Answering System is designed to help users easily extract relevant information from large documents. By processing the document content into smaller chunks and generating vector embeddings, the system can perform a similarity search to find the most relevant content in response to user queries. The process is efficient, scalable, and can be applied to various types of documents (e.g., PDFs, Word files, etc.).
+This AI-driven document Q&A tool allows users to quickly find key insights within large files without manually reading through them. The system analyzes the document by dividing it into smaller passages, converting each passage into a semantic numerical form, and then identifying the sections most closely related to a user’s question. The method is efficient, highly scalable, and works across multiple file types such as PDFs and Word documents.
 
-The project consists of three main components:
+The project includes three primary modules:
 
-1. **Document Loading**: A script to load the document into the system.
-2. **Document Chunking**: A script to divide the document into smaller chunks for efficient processing.
-3. **Vector Embedding & Querying**: A script that converts document chunks into vector embeddings using AI models and allows the user to ask questions to retrieve answers based on document content.
+File Intake: Handles uploading and importing documents into the system.
+
+Content Segmentation: Breaks the text into smaller, manageable pieces to support accurate processing.
+
+Semantic Indexing & Search: Transforms each text segment into vector representations using AI models and enables users to pose questions, retrieving answers from the most relevant portions of the document.
 
 ## Project Structure
 
