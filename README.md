@@ -1,6 +1,6 @@
 # AI-Powered Document Question Answering System
 
-This project enables users to upload a document, analyze its content using AI-powered vector embeddings, and ask questions to receive answers based on the document. The system processes the document by dividing it into chunks, embedding those chunks, storing them in a vector database, and providing relevant answers through a similarity search. It leverages advanced AI models and techniques to enhance document understanding and query answering.
+This system lets users submit a document and interact with it through natural-language questions. After upload, the document is broken into smaller sections, each converted into numerical representations (embeddings) that capture meaning. These representations are stored in a vector database, enabling the system to locate the most relevant sections when a query is asked. Using similarity matching and advanced AI models, the platform delivers precise, context-based answers derived directly from the document’s content.
 
 ## Project Overview
 
